@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style.css">
+<script src="./script.js"></script>
+</head>
+<body>
+    <center>
+        <div class="row">
+            <h1 style="margin: 20px;"> <b>CALCULATOR </b></h1>
+        <div class="border border-1 border-secondary" style="width: 350px;height: 400px; background-color: black;border-radius: 5%;">
+           
+            <input id="result" type="text" class="form-control" placeholder="Enter" style="width: 300px;height: 50px;margin-top: 30px; background-color: rgb(177, 177, 177);">
+            <br>
+              <button onclick="clearText()" style="background-color: rgb(219, 14, 14);">AC</button>
+<button onclick="removeLastCharacter()"  >&#9003;</button>
+<button onclick="displayNumber('%')">%</button>
+<button onclick="displayNumber('/')">&#247;</button>
+<br>
+            <button  onclick="displayNumber(7)">7</button>
+            <button onclick="displayNumber(8)" >8</button>
+            <button onclick="displayNumber(9)">9</button>
+            <button onclick="displayNumber('*')" >x</button>
+            <br>
+            <button onclick="displayNumber(4)">4</button>
+            <button onclick="displayNumber(5)">5</button>
+            <button onclick="displayNumber(6)">6</button>
+            <button onclick="displayNumber('-')">-</button>
+            <br>
+            <button  onclick="displayNumber(1)">1</button>
+            <button onclick="displayNumber(2)">2</button>
+            <button onclick="displayNumber(3)">3</button>
+            <button onclick="displayNumber('+')">+</button>
+            <br>
+          
+            <button onclick="displayNumber(0)">0</button>
+            <button onclick="displayNumber('.')">.</button>
+            <button onclick="evaluateExpression()" style="background-color: green;width:125px ;" >=</button>
+            <br>
+            
+        </div>
+    </div>
+   
+    </center>
+</body>
+</html>
